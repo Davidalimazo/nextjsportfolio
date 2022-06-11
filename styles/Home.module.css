@@ -1,116 +1,459 @@
-.container {
-  padding: 0 2rem;
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
 }
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.homeText{
+    width: 40%;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+.textContainer{
+    margin:150px 10px 0 10px;
+    padding: 0 10px 0 10px;
+    display: flex;
     flex-direction: column;
-  }
+    align-content: flex-start;
+}
+.textContainer h3{
+    font-size: 25px;
+}
+.textContainer h2{
+    font-size: 30px;
+}
+.textContainer p{
+    font-size: 35px;
+}
+.ico a{
+    text-decoration: none;
+    display:inline-flex;
+    margin-right: 10px;
+    font-size: 25px;;
+}
+.about{
+    background: rgba(152, 198, 203, 0.112);
+    padding: 100px 100px;
+    text-align: center;
+}
+.about h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Roboto' sans-serif;
+}
+.skills{
+    padding: 20px;
+}
+.skills h2{
+    padding: 10px 0 0 0;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.skills p{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about div{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skillGrid{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.firstGrid{
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.react{
+    display:inline-flex;
+}
+.react label{
+    display:block;
+}
+.react i, .react label{
+    margin-right:10px;
+}
+.react i {
+    font-size:30px;
+}
+.react progress{
+    width: 250px;
+    border-radius: 5px 5px;
+}
+.service{
+    background: rgba(152, 198, 203, 0.092);
+    margin: 10px 0;
+    padding: 15px 0;
+}
+.serviceh2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+}
+.servicep{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.serviceGrid{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 20px 10px 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.serviceBox{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(108, 162, 248, 0.692);
+}
+.serviceBox i{
+    font-size: 50px;
+    font-weight: 500;
+    color:#2e5984 ;
+}
+.serviceBox h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.serviceBox p{
+    font-size: 15px;
+    color: rgba(58, 57, 57, 0.705);
+}
+.projects h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+}
+.projects p{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(58, 57, 57, 0.705);
+}
+
+.first_part {
+    padding: 10px;
+    margin: 10px 115px; 
+    display: grid;
+    grid-template-rows: 300px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    justify-content: stretch;
+    grid-gap: 0.5rem;
+}
+.first_part > div{
+    padding: 10px;
+}
+
+.fproject1{
+    grid-row: 1 / 3;
+    grid-column: 1 /  2;
+    overflow: hidden; 
+}
+.fproject3{
+    grid-row: 1 / 2;
+    grid-column: 2 /  5;
+    overflow: hidden;
+}
+.fproject6{
+    grid-row: 3 / 5;
+    grid-column: 1 /  3;
+    overflow: hidden;
+}
+.fproject4{
+    grid-row: 2 / 5;
+    grid-column: 3 /  5;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+.fproject4 img{
+    margin-bottom: 20px;
+}
+.fproject4 img:last-child{
+    margin-bottom: 0;
+}
+.testimonies{
+    display: grid;
+    grid: 400px/ 1fr 2fr;
+    padding: 10px;
+    margin: 20px 115px 0 115px;
+}
+.testimony_title{
+    background: #2e5984;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony_title div{
+    margin: auto auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.testimony_title div p{
+    margin-left: 20px;
+}
+.testifiers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.testifier1{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.testifier1 img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.message{
+    
+    color: rgba(58, 57, 57, 0.705);
+}
+.contact{
+    display: grid;
+    grid: 400px/ 1fr 2fr;
+    padding: 10px;
+    margin: 0 115px 0 115px;
+}
+.contact_title div{
+    margin: auto auto;
+    color: #2e5984;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact_title{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.contact_title h2{
+    font-size: 24px;
+}
+
+.contact_title div{
+    color: #2e5984;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+.contact_title div p{
+    font-size: 17px;
+}
+
+.contact_form{
+    padding: 10px;
+    background: #2e5984;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #fff;
+}
+.contact_icons{
+    margin-top: 10px;
+    display: inline-flex;
+    text-align: center;
+}
+.contact_icons a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.name input, .name textarea{
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    
+}
+.contact_form h2{
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+}
+.contact_form h1{
+    padding-top: 20px;
+    text-align: left;
+}
+.contact_form form div{
+    margin: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    background: #fff;
+    color: #2e5984;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media(max-width:900px){
+    /* .projects{
+        margin-top: 0;
+    } */
+    .first_part{
+        
+        margin: 70px;
+        margin-right: 20px;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .first_part > div{
+        width: 200px;
+        margin: 0;
+    }
+    .first_part .fproject1{
+        order: 1;
+        height: 150px;
+        margin-top: -130px;
+    }
+    .first_part .fproject6{
+        margin-top: -130px;
+    }
+    .testimonies{
+        margin: 0;
+    }
+    .contact{
+        margin: 10px;
+    }
+    .serviceGrid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      
+    }
+
+    .serviceBox{
+        width: 200px;
+        border: 1px solid rgba(108, 162, 248, 0.692);
+    }
+    .first_part{
+        margin-top: -10px;
+    }
+    
+}
+@media(max-width:768px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .about{
+        padding: 20px 20px;
+    }
+    
+    .homeText{
+        margin-top: 0;
+        width: 100%;
+    }
+    .textContainer{
+       text-align: center;
+       margin-top: 40px;
+    }
+    .homeImage{
+       display: flex;
+       align-content: center;
+       justify-content: center;
+    }
+    
+    .serviceBox{
+        width: 100%;
+    }
+    .first_part > div{
+        margin-top: 0;
+        width: 100%;
+    }
+    .first_part .fproject1{
+        order: 1;
+        margin: 10px auto 10px auto;
+        height: 250px;
+        width: 100%;
+    }
+    .testimonies{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimony_title{
+        background: #2e5984;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    
+    .testimony_title div{
+        margin: auto auto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .testimony_title div p{
+        margin-left: 20px;
+    }
+    .testifiers{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+   
+    .contact{
+
+        border-top: 1.5px solid #2e5984;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 10px 0 10px;
+    }
+}
+@media(max-width:450px){
+    .testifier1{
+        width: 100%; 
+    }
+    .about{
+        padding: 5px 5px;
+    }
+    .homeImage{
+        display: flex;
+        margin-left: 20px;
+     }
 }
